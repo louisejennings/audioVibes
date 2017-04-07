@@ -9,4 +9,14 @@ The music collection is stored on MongoDB and a user can play, download, or favo
 
 Users can manage and update their profile.
 
+Homepage: 
+![alt text](https://github.com/louisejennings/audioVibes/blob/master/screenshots/homepage.png "Homepage")
 
+Music Collection: 
+![alt text](https://github.com/louisejennings/audioVibes/blob/master/screenshots/musicCollection.png "Music Collection")
+
+Favourites: 
+![alt text](https://github.com/louisejennings/audioVibes/blob/master/screenshots/favourites.png "Favourites")
+
+User Profile: 
+![alt text](https://github.com/louisejennings/audioVibes/blob/master/screenshots/userProfile.png "User Profile")
