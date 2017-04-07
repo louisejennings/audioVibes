@@ -1,0 +1,30 @@
+<h2 class="page-header">Express Yourself With Music</h2>
+
+<div class="container contents">
+	<div class="row">
+		<div class="col-md-12">
+			{{#each musics}} <!--display each music object details below-->
+                <div class="col-md-4 song">
+					<a href="/users/favourites/{{this.id}}">
+                		<button class="favourite"><i class="fa fa-heart"></i> Favourite</button>
+                	</a>
+                	<h3 class="details">Song: {{this.title}}</h3>
+                	<div class="artwork">
+                		<img class="img img-responsive"src="{{this.artwork}}">
+                	</div>
+                    <h3 class="details">Album: {{this.album}}</h3>
+                    <h3 class="details">Artist: {{this.artist}}</h3>
+                    <h3 class="details">Genre: {{this.genre}}</h3>
+                    <div id="result"></div>
+                    <a href="http://localhost:3033/music?id={{this.play}}" target="_blank"> <!--go to index router /music-->
+                    	<button class="btn btn-success play">Play </button>
+                    </a>
+                    <a href="http://localhost:3033/download?id={{this.play}}" target="_blank"> <!--go to index router /music-->
+                        <button class="btn btn-success">Download </button>
+                    </a>
+                </div>
+            {{/each}}
+		</div>
+	</div>
+</div>
+	

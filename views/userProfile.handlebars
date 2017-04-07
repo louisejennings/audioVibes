@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="row user-menu-container square">
+        <div class="col-md-12 user-details">
+            <div class="row coralbg white">
+                <div class="col-md-6 no-pad">
+                    <div class="user-pad">
+                        <h3>Hi {{user.name}}</h3>
+                        <h4 class="white"><i class="fa fa-envelope"></i> {{user.email}}</h4>
+                        {{#if user.twitter.length}}
+                            <h4 class="white"><i class="fa fa-twitter"></i> {{user.twitter}}</h4>
+                        {{/if}}
+                         {{#if user.facebook.length}}
+                            <h4 class="white"><i class="fa fa-facebook"></i> {{user.facebook}}</h4>
+                        {{/if}}
+                        <a href="/users/edit/{{user.id}}">
+                            <button id="update">Update Profile</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 no-pad">
+                    <div class="user-image">
+                    {{#if user.photo.length}}
+                       <img class="img-responsive thumbnail profile"src="{{user.photo}}">
+                    {{else}}
+                        <img class="img-responsive thumbnail profile"src="http://www.freeiconspng.com/uploads/profile-icon-9.png">
+                    {{/if}}
+                    </div>
+                </div>
+            </div>
+           <!--- <div class="row overview">
+                <div class="col-md-12 user-pad text-center">
+                    <h3>Top 3 Songs</h3>
+                    <h4>2,784</h4>
+                </div>
+            </div>
+            <div class="row overview">
+                <div class="col-md-4 user-pad text-center">
+                    <h3>Top Artists</h3>
+                    <h4>456</h4>
+                </div>
+            </div>--->
+        </div>
+    </div>
+</div>
+
+

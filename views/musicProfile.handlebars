@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="row user-menu-container square">
+        <div class="col-md-12 user-details">
+            <div class="row coralbg white"> <!--changed to blue-->
+                <div class="col-md-12 no-pad favouriteSong">
+                    <div class="user-pad white">
+                       <h2>FAVOURITES</h2>         
+                    </div>
+                </div>
+            </div>
+
+           <div class="row">
+            {{#each user.favourites}}
+                <div class="col-md-12 favourites">
+                    <div class="col-md-8">
+                        <p>Artist: {{this.artist}}</p>
+                        <p>Song <i class="fa fa-music"></i> {{this.title}}</p>
+                        <p>Album: {{this.album}}</p>
+                        <p>Genre: {{this.genre}}</p>
+                        <a href="/users/favourites/delete/{{this.id}}">
+                            <button class="favourite">Delete</button>
+                        </a>
+                    </div>
+                     <div class="col-md-4">
+                        <div class="artwork">
+                            <img class="img-responsive" width="100" height="100" src="{{this.artwork}}">
+                        </div>
+                        <div class="buttons">
+                            <a href="http://localhost:3033/music?id={{this.play}}" target="_blank"> <!--go to index router /music-->
+                                <button class="btn btn-success">Play </button>
+                            </a>
+                            <a href="http://localhost:3033/download?id={{this.play}}" target="_blank"> <!--go to index router /music-->
+                                <button class="btn btn-success">Download </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</div>
