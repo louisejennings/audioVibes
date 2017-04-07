@@ -1,7 +1,7 @@
 {
-  "name": "test",
+  "name": "audioVibes",
   "version": "1.0.0",
-  "description": "music store project",
+  "description": "music player project",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

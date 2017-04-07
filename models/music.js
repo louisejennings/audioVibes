@@ -31,11 +31,5 @@ module.exports.getMusicById = (id, callback) =>{
 	Music.findById(id, callback);	
 }
 
-//Get Music by Artist
-/*module.exports.getMusicByArtist = function(artist, callback) {
-	var query = {artist: artist};
-	Music.findOne(query, callback);
-	console.log(artist);
-}*/
 
 

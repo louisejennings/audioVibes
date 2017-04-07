@@ -101,9 +101,6 @@ router.post('/login', passport.authenticate('local', {}),
   }
 );
 
-/*router.post('/login',
-  passport.authenticate('local', { successRedirect: '/',
-                                   failureRedirect: '/users/login' }));*/
 
 //Logout
 router.get('/logout', function(req, res){
